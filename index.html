@@ -15,8 +15,8 @@
 
             <h1 class="text-center">Genero dieci Mail</h1>
             <ol>
-                <li  class="text-center text-capitalize" style="color:Tomato">
-                    {{generateMail}}</li>
+                <li v-for="(mail,index) in generateMail " class="text-center text-capitalize" style="color:red">
+                    {{mail}}</li>
             </ol>
            
         </div>
