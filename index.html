@@ -14,9 +14,13 @@
         <div id="app">
 
             <h1 class="text-center">Genero dieci Mail</h1>
-            <ol>
+
+            <ol class="list-group list-group-flush"
+                v-show="generateMail.length == 10">
+
                 <li v-for="(mail,index) in generateMail " class="text-center text-capitalize" style="color:red">
-                    {{mail}}</li>
+                 {{mail}}</li>
+        
             </ol>
            
         </div>
